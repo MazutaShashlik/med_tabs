@@ -16,7 +16,7 @@ public class EmailPas extends AppCompatActivity {
 
 
 
-    private int resendTime = 4;
+    private int resendTime = 60;
 
 
 
