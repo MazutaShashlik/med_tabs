@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1064568427657",
+    "project_id": "laboratoria-b16a9",
+    "storage_bucket": "laboratoria-b16a9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1064568427657:android:0d5f20540e9bcb0149e258",
+        "android_client_info": {
+          "package_name": "com.example.smartlab_danilk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1064568427657-m2qd7ch9q579gem4bmaptgbar1f5jrlg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTNjVWNZy1oU2E9jEgdFZDSrAQxwI49Jk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1064568427657-m2qd7ch9q579gem4bmaptgbar1f5jrlg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
