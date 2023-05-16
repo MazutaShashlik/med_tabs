@@ -1,4 +1,4 @@
-package com.example.smartlab_danilk;
+package com.example.smartlab_danilk.zagruzka;
 
 
 import android.os.Bundle;
@@ -12,17 +12,21 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
+import com.example.smartlab_danilk.R;
 
-public class Act3 extends Fragment {
+public class Act1 extends Fragment {
 
     private ImageView mImageView;
     private int mImageId;
 
-    public Act3() {
+
+    public Act1() {
+
     }
 
-    public static Act3 newInstance(int imageId) {
-        Act3 fragment = new Act3();
+    // TODO: Rename and change types and number of parameters
+    public static Act1 newInstance(int imageId) {
+        Act1 fragment = new Act1();
         Bundle args = new Bundle();
         args.putInt("image_id", imageId);
         fragment.setArguments(args);
@@ -39,7 +43,7 @@ public class Act3 extends Fragment {
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.zastavka3, container, false);
+        View view = inflater.inflate(R.layout.zastavka1, container, false);
         mImageView = view.findViewById(R.id.imageView);
         mImageView.setImageResource(mImageId);
         return view;

@@ -1,16 +1,15 @@
-package com.example.smartlab_danilk;
+package com.example.smartlab_danilk.zagruzka;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
 import androidx.viewpager.widget.ViewPager;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.widget.TextView;
-import android.widget.Toast;
+
+import com.example.smartlab_danilk.R;
+import com.example.smartlab_danilk.Vhod;
 
 import java.util.ArrayList;
 import java.util.List;

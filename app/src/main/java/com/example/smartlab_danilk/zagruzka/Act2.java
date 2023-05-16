@@ -1,4 +1,4 @@
-package com.example.smartlab_danilk;
+package com.example.smartlab_danilk.zagruzka;
 
 import android.os.Bundle;
 
@@ -10,6 +10,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+
+import com.example.smartlab_danilk.R;
 
 
 public class Act2 extends Fragment {

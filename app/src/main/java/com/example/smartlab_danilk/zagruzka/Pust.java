@@ -1,8 +1,10 @@
-package com.example.smartlab_danilk;
+package com.example.smartlab_danilk.zagruzka;
 
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.smartlab_danilk.R;
 
 public class Pust extends AppCompatActivity {
 

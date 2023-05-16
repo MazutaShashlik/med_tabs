@@ -1,4 +1,4 @@
-package com.example.smartlab_danilk;
+package com.example.smartlab_danilk.zagruzka;
 
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -6,6 +6,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+
+import com.example.smartlab_danilk.R;
 
 public class Zastavka extends AppCompatActivity {
 

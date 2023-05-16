@@ -34,7 +34,7 @@
         />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/email"
         android:layout_width="335dp"
         android:layout_height="48dp"
         android:layout_marginTop="8dp"
@@ -69,10 +69,10 @@
         android:text="Или войдите с помощью"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3" />
+        app:layout_constraintTop_toBottomOf="@+id/enter" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/enter"
         android:layout_width="335dp"
         android:layout_height="56dp"
         android:layout_marginTop="28dp"
@@ -82,13 +82,13 @@
         android:text="Далее"
         android:textSize="17sp"
         app:cornerRadius="15dp"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName2"
+        app:layout_constraintEnd_toEndOf="@+id/email"
         app:layout_constraintHorizontal_bias="0.631"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName2"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+        app:layout_constraintStart_toStartOf="@+id/email"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/enteryandex"
         android:layout_width="335dp"
         android:layout_height="56dp"
 
@@ -99,8 +99,8 @@
         android:textColor="#000000"
         android:textSize="17sp"
         app:cornerRadius="15dp"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName2"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName2"
+        app:layout_constraintEnd_toEndOf="@+id/email"
+        app:layout_constraintStart_toStartOf="@+id/email"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
 
