@@ -15,7 +15,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.smartlab_danilk.tabs.Tabs_A;
 
-public class Password extends AppCompatActivity {
+public class CheckPas extends AppCompatActivity {
 
     private Button btn0, btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9, btnDel;
     private EditText passwordApp;
@@ -23,20 +23,8 @@ public class Password extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.create_password);
-        btn0 = (Button) findViewById(R.id.btn0);
-        btn1 = (Button) findViewById(R.id.btn1);
-        btn2 = (Button) findViewById(R.id.btn2);
-        btn3 = (Button) findViewById(R.id.btn3);
-        btn4 = (Button) findViewById(R.id.btn4);
-        btn5 = (Button) findViewById(R.id.btn5);
-        btn6 = (Button) findViewById(R.id.btn6);
-        btn7 = (Button) findViewById(R.id.btn7);
-        btn8 = (Button) findViewById(R.id.btn8);
-        btn9 = (Button) findViewById(R.id.btn9);
-
-        btnDel = (Button) findViewById(R.id.btndelete);
-        passwordApp =  (EditText) findViewById(R.id.pas);
+        setContentView(R.layout.activity_password_app);
+        setSetting();
 
         btn0.setOnClickListener(v -> onClick(btn0));
         btn1.setOnClickListener(v -> onClick(btn1));
@@ -65,14 +53,18 @@ public class Password extends AppCompatActivity {
             public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
                 String text = charSequence.toString();
                 if (text.length() == 4) {
-                    SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(Password.this);
-                    SharedPreferences.Editor editor = sharedPref.edit();
-                    editor.putString("pin", text);
-                    editor.apply();
-                    Toast.makeText(Password.this, "Пароль создан", Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(Password.this, Tabs_A.class);
-                    startActivity(intent);
-                    finish();
+                    SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(CheckPas.this);
+                    String pincode = sharedPref.getString("pin", "");
+
+                    if(pincode.equals(text)) {
+                        Intent intent = new Intent(CheckPas.this, Tabs_A.class);
+                        startActivity(intent);
+                        finish();
+                        return;
+                    } else {
+                        Toast.makeText(CheckPas.this, "Пароль неверный", Toast.LENGTH_SHORT).show();
+                    }
+
                 }
             }
 
@@ -88,4 +80,20 @@ public class Password extends AppCompatActivity {
         passwordApp.getText().insert(passwordApp.getSelectionStart(), number);
     }
 
+    private void setSetting() {
+        btn0 = (Button) findViewById(R.id.btn0);
+        btn1 = (Button) findViewById(R.id.btn1);
+        btn2 = (Button) findViewById(R.id.btn2);
+        btn3 = (Button) findViewById(R.id.btn3);
+        btn4 = (Button) findViewById(R.id.btn4);
+        btn5 = (Button) findViewById(R.id.btn5);
+        btn6 = (Button) findViewById(R.id.btn6);
+        btn7 = (Button) findViewById(R.id.btn7);
+        btn8 = (Button) findViewById(R.id.btn8);
+        btn9 = (Button) findViewById(R.id.btn9);
+
+        btnDel = (Button) findViewById(R.id.btndelete);
+        passwordApp =  (EditText) findViewById(R.id.pas);
+
+    }
 }

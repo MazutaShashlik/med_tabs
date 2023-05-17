@@ -29,6 +29,7 @@
         <activity android:name=".tabs.Prof"/>
         <activity android:name=".tabs.Res"/>
         <activity android:name=".tabs.Sup"/>
+        <activity android:name=".CheckPas"/>
     </application>
 
 </manifest>
